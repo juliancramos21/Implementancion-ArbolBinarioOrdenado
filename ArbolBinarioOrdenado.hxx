@@ -50,7 +50,7 @@ bool ArbolBinarioOrdenado<T>::buscar(T val) {
 }
 
 template <class T>
-void ArbolBinarioOrdenado<T>::preorden() {
+void ArbolBinarioOrdenado<T>::preOrden() {
     // Implementación vacía
 }
 
