@@ -7,8 +7,8 @@ template <class T>
 class NodoBinario{
     protected:
         T dato;
-        Nodo <T>* hijoIzq;
-        Nodo <T>* hijoDer;
+        NodoBinario <T>* hijoIzq;
+        NodoBinario <T>* hijoDer;
     
     public: 
         NodoBinario();
@@ -19,13 +19,16 @@ class NodoBinario{
         void adicionarDesc(T& valor);
         void eliminarDesc (T& valor);
         bool esHoja();
-        
+        void setDato(T& datoNuevo);
+        int altura();
+
+
         void setHijoIzq(NodoBinario<T>* izq);
         void setHijoDer(NodoBinario<T>* der);
         
         
-        Nodo<T>*buscar(T& valor);
-        void setDato(T& d);
+        NodoBinario<T>*buscar(T& valor);
+        
         void limpiarLista();
         
         
@@ -36,6 +39,6 @@ class NodoBinario{
         
 };
 
-#include "nodo.hxx"
+#include "NodoBinario.hxx"
 
 #endif

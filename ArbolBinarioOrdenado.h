@@ -6,17 +6,17 @@
 template<class T>
 class ArbolBinarioOrdenado {
 protected:
-    NodoBinario<T>* raiz; // Cambiar a puntero
+    NodoBinario<T>* raiz; 
 public:
     ArbolBinarioOrdenado();
-    ~ArbolBinarioOrdenado(); // Corregir el destructor
+    ~ArbolBinarioOrdenado(); 
     bool esVacio(); 
     T datoRaiz(); 
     int altura();
     int tamano();
-    bool insertar(T val);
-    bool eliminar(T val); 
-    bool buscar(T val); 
+    bool insertar(T valorDato);
+    bool eliminar(T valorDato); 
+    bool buscar(T valorDato); 
     void preOrden();
     void inOrden();
     void posOrden();
